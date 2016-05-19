@@ -15,4 +15,11 @@ child_process.execSync( 'rm -rf .git', { cwd: fPath } );
 child_process.execSync( 'git init', { cwd: fPath } );
 child_process.execSync( 'git remote add origin https://github.com/Planeshifter/insert-equations-examples.git', { cwd: fPath } );
 
-insertEquations( fPath );
+insertEquations( fPath, done );
+
+function done( err ) {
+	if ( err ) {
+		throw err;
+	}
+	console.log( 'README.md file successfully processed.' );
+} // end FUNCTION done()
