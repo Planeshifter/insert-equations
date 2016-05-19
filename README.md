@@ -37,21 +37,21 @@ function done( err ) {
 
 *	As a concrete example
 
-``` html
-<!-- <equation class="equation" label="eq:gamma_function_positive_integers" align="center" raw="\Gamma ( n ) = (n-1)!" alt="Gamma function for positive integers."> -->
-<!-- </equation> -->
-```
+	``` html
+	<!-- <equation class="equation" label="eq:gamma_function_positive_integers" align="center" raw="\Gamma ( n ) = (n-1)!" alt="Gamma function for positive integers."> -->
+	<!-- </equation> -->
+	```
 
-will be transformed to
+	will be transformed to
 
-``` html
-<!-- <equation class="equation" label="eq:gamma_function_positive_integers" align="center" raw="\Gamma ( n ) = (n-1)!" alt="Gamma function for positive integers."> -->
-<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="eq:gamma_function_positive_integers">
-	<img src="https://cdn.rawgit.com/Planeshifter/insert-equations-examples/8fd73c14a23a0bcb1d31e7e3246ae411e11a0c70/docs/img/eqn1.svg" alt="Gamma function for positive integers.">
-	<br>
-</div>
-<!-- </equation> -->
-```
+	``` html
+	<!-- <equation class="equation" label="eq:gamma_function_positive_integers" align="center" raw="\Gamma ( n ) = (n-1)!" alt="Gamma function for positive integers."> -->
+	<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="eq:gamma_function_positive_integers">
+		<img src="https://cdn.rawgit.com/Planeshifter/insert-equations-examples/8fd73c14a23a0bcb1d31e7e3246ae411e11a0c70/docs/img/eqn1.svg" alt="Gamma function for positive integers.">
+		<br>
+	</div>
+	<!-- </equation> -->
+	```
 
 *	The supplied directory has to be a git project with a remote branch on GitHub. Otherwise, `insertEquations` will throw an error.
 *	Beware: `insertEquations` automatically creates a commit for the newly created files and changes to `README.md`.
