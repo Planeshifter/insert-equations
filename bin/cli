@@ -86,7 +86,7 @@ if ( args._.length ) {
 
 // INSERT EQUATIONS //
 
-insertEquations( done );
+insertEquations( dir, done );
 
 
 /**

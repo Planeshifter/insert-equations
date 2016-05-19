@@ -117,6 +117,10 @@ Options:
 
 ```
 
+## Notes
+
+*	If no `directory` is supplied, the current working directory will be used to look for a `README.md` file.
+
 
 ### Examples
 
